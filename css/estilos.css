@@ -1,0 +1,179 @@
+
+ .fondo{
+    background-color: blue;  /*NADA*/
+}
+
+.color{
+    color: white;  /*NADA*/
+}
+h3{
+    color: black;
+	font: bold 20px verdana, sans-serif;/*NADA*/
+}
+h2{
+	color:black;
+	font: bold 20px verdana, sans-serif; /*NADA*/
+}
+p{
+	color:black;
+	font: bold 20px verdana, sans-serif; /*LETRA DEL TEXTO DE LA IZQUIERDA*/;
+}
+
+h5{
+	color:white;
+	font: bold 15px verdana, sans-serif; /*LETRA DEL TEXTO DE LA IZQUIERDA*/;
+}
+h1{
+	color:black;
+	font: bold 25px verdana, sans-serif; /*LETRA DEL TEXTO DE LA IZQUIERDA*/;
+}
+h4{
+	color:black; /*CENTRA Y AGRANDA EL TITULO*/
+	font: bold 25px verdana, sans-serif;
+	text-align: center;
+}
+#seccion{  /*ORDENA LA IMAGEN EN SU LUGAR*/
+	width: 49%;
+	margin: 20px;
+	float: left;
+	text-align: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-image: url(../img/alga.jpg);
+	background-size: cover;
+}
+#columna{ /*NADA*/
+	width: cover; 
+
+	float: left;
+	flex-wrap: wrap;
+}
+article{ /*LE DA UN FONDO AL LA INFORMACIÓN DEL TEXTO DE LA IZQUIERDA*/
+
+	border: 1px solid black;
+	padding: 42px;
+	margin-bottom: 20px;
+	
+}
+header, section,footer, aside, nav, article, figure, figcaption, hgroup{ /*NADA*/
+	display:flexbox;
+}
+aside{ /*ORDENA LA IMAGEN EN SU LUGAR*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: auto;
+	margin: 20px 20px;
+}
+
+footer { /*ORDENA LA PARTE DE LOS CONTACTOS CENTRANDOLOS*/
+	text-align: center;
+	padding: 20px;
+	background-color: green;
+	color: white;
+	display: block;
+    margin-top: 10px;
+  }
+  #menu{ /*ORDENA LA PARTE DE QUIENES SOMOS, GALERIA Y PAGINA PRINCIPAL*/
+	color: rgb(25, 0, 255);
+	font-size: auto;
+	text-align: center;
+	padding: 0cm 0cm;
+}
+#menu li{ /*DEJA EN UNA SOLA LINEA EL QUIENES SOMOS, GALERIA Y PAGINA PRINCIPAL*/
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+	font: bold 20px Arial;
+}
+ /*FOOTER*/
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+footer{
+    background: #222;
+    color: #fff;
+    padding: 60px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.items{
+    flex-basis: 20%;
+}
+.items .logo{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    color: #b6b6b6;
+}
+.items p{
+    margin: 1.2em 0;
+}
+.social{
+    display: flex;
+}
+.social a{
+    height: 30px;
+    width: 30px;
+    background: #383535;
+    border-radius: 5px;
+    margin:10px 5px;
+    text-align: center;
+}
+.social a i{
+    font-size: 1.3em;
+    line-height: 30px;
+}
+.items h3{
+    position: relative;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+.items h3::after{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+}
+hr{
+    opacity: .3;
+}
+footer .end{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+@media (max-width:640px){
+    .items{
+    flex-basis: 80%;
+    margin: auto;
+}
+
+}
